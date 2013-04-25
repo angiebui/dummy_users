@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Login!</h1>
+
+  <p><span id="errors">
+    <% if @errors %>
+      <%= @errors %>
+    <% end %>
+  </span></p>
+
+
+  <form action="/login" method="post">
+    Email: <input type="text" name="email"><br>
+    Password: <input type="password" name="password"><br>
+    <input type="submit" value="Submit!">
+  </form><br>
+
+
+
+  <p><a href='/signup'>Signup!</a></p>
+
+
+</div>
